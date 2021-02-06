@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "905921271418",
+    "firebase_url": "https://wbchse-physics-hungama.firebaseio.com",
+    "project_id": "wbchse-physics-hungama",
+    "storage_bucket": "wbchse-physics-hungama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905921271418:android:4a778b4b564762cbc3cdc3",
+        "android_client_info": {
+          "package_name": "hsfinheejeamitjeeellojeerphysicshumnagamaortk.example.wbchsephysicshungama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905921271418-vgucne8puvfe1tu74pm7oc3sukiln3i1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hsfinheejeamitjeeellojeerphysicshumnagamaortk.example.wbchsephysicshungama",
+            "certificate_hash": "a7dbcaad2dc0a49f84455b2dea2395f5deff37ba"
+          }
+        },
+        {
+          "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXZ1uvZtAJP3Dz1fT5nD_F1sV8V741ip8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8374476512679967~7707830015"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905921271418:android:50a39ed0869d1429c3cdc3",
+        "android_client_info": {
+          "package_name": "physicsadmin.example.physicsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905921271418-m75t94fi7f0naa4gfekrigsne8rj9ka6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "physicsadmin.example.physicsadmin",
+            "certificate_hash": "a7dbcaad2dc0a49f84455b2dea2395f5deff37ba"
+          }
+        },
+        {
+          "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXZ1uvZtAJP3Dz1fT5nD_F1sV8V741ip8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905921271418:android:6d42c52a29c070d8c3cdc3",
+        "android_client_info": {
+          "package_name": "wbphysicsappbyamitmaity11.example.wbphysics1112"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXZ1uvZtAJP3Dz1fT5nD_F1sV8V741ip8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905921271418-r4advh27f270lvkc286i8gvc9kesgc9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    android:background="@drawable/dida"
+    android:layout_height="match_parent"
+    tools:context=".QuizHomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#62F8BE"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="60dp"
+                    android:onClick="QUizGra"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/gra_contacts"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/koho"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:clickable="true"
+                app:cardCornerRadius="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="45sp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="italic"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="Live Quiz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Live Quiz in WBCHSE Physics Life"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/carter_one"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:text="Next Quiz:  "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/Quiz_Fixed_Time"
+                            android:textStyle="bold"
+                            android:text="07.00 PM"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Current Time:"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="22sp"/>
+                        <TextClock
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textStyle="italic"
+                            android:format12Hour="hh:mm:ss a"
+                            android:id="@+id/couny_down"
+                            android:textColor="@android:color/holo_red_light"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Start"
+                        android:textAllCaps="false"
+                        android:clickable="true"
+                        android:id="@+id/startquiz"
+                        android:onClick="Quiz_Start"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button1"
+                        android:backgroundTint="@android:color/holo_blue_light"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:text="*** Swipe to Refresh"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="25dp"
+                android:padding="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="Past Winner"
+                        android:layout_alignParentEnd="true"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:id="@+id/Quiz_First_Result"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/carter_one"
+                            android:text="Amit Maity"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:id="@+id/Quiz_Second_Result"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/carter_one"
+                            android:text="Amit Maity"/>
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:id="@+id/Quiz_Third_Result"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/carter_one"
+                            android:text="Asim Kumar Jana"/>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

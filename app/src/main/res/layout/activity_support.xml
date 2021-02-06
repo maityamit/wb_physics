@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SupportActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/profile_layout"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raise a Request"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/autour_one"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**Reply within 12 hours in hat section"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/hidden_layout"
+            android:alpha="0.8"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#00BC4E"
+                android:alpha="0.8"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_done_outline_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sucessful"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:textColor="#00BC4E"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25sp"
+                android:textStyle="italic"
+                android:id="@+id/hidden_text"
+                android:text="Request Id:"
+                android:textColor="@android:color/black"/>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/show_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/request_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/quary_input"
+                    android:layout_marginStart="20sp"
+                    android:inputType="textPersonName"
+                    android:hint="Enter Your Name"
+                    android:paddingStart="15dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <EditText
+                    android:id="@+id/request_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/quary_input"
+                    android:layout_marginTop="22sp"
+                    android:layout_marginStart="20sp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Your Email"
+                    android:paddingStart="15dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <EditText
+                    android:id="@+id/request_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/quary_input"
+                    android:layout_marginTop="22sp"
+                    android:layout_marginStart="20sp"
+                    android:inputType="textShortMessage"
+                    android:hint="Name of the Subject"
+                    android:paddingStart="15dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <EditText
+                    android:id="@+id/request_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/quary_input"
+                    android:layout_marginTop="22sp"
+                    android:layout_marginStart="20sp"
+                    android:paddingTop="10dp"
+                    android:gravity="start"
+                    android:inputType="textLongMessage"
+                    android:hint="Enter details"
+                    android:paddingStart="15dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <Button
+                    android:id="@+id/request_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginStart="25dp"
+                    android:text="Submit Request"
+                    android:layout_marginBottom="25sp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                   android:backgroundTint="#6200EA"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="25sp"/>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
